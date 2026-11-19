@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DevOps Lab Mid | Assignment Portal Demo</title>
+<style>
+:root{font-family:system-ui,-apple-system,sans-serif;color:#17233c;background:#eef3fa}
+*{box-sizing:border-box}body{margin:0;padding:48px 16px}.card{max-width:620px;margin:auto;background:white;padding:36px;border-radius:18px;box-shadow:0 12px 36px #15284b1c}
+h1{margin:0 0 10px;color:#1d3c83}p{color:#52627a;line-height:1.6}label{display:block;margin-top:17px;font-weight:650}input{width:100%;padding:12px;margin-top:6px;border:1px solid #b8c6dc;border-radius:8px;font:inherit}button{width:100%;padding:14px;margin-top:25px;border:0;border-radius:8px;background:#245de2;color:white;font:inherit;font-weight:700;cursor:pointer}.note{background:#fff4dc;padding:12px;border-radius:8px;font-size:14px}.status{margin-top:16px;padding:12px;background:#e6f5ec;border-radius:8px;display:none}a{color:#245de2}
+</style>
+</head>
+<body><main class="card">
+<h1>DevOps Lab Assignment Portal</h1>
+<p>GitHub Pages deployment demo for the DevOps Lab Mid project.</p>
+<p class="note"><strong>Static demo only:</strong> GitHub Pages cannot run the Flask backend. Submissions entered here are not stored or sent to a server. Use the local Flask app for real submissions.</p>
+<form id="demo">
+<label for="name">Student Name</label><input id="name" required placeholder="Enter your full name">
+<label for="reg">Registration Number</label><input id="reg" required placeholder="Enter registration number">
+<label for="title">Assignment Title</label><input id="title" required placeholder="Enter assignment title">
+<label for="url">GitHub Submission URL</label><input id="url" type="url" required placeholder="https://github.com/username/repository">
+<button type="submit">Preview Submission</button></form>
+<div id="status" class="status" role="status">Demo form validated successfully. No data was saved.</div>
+<p><a href="https://github.com/Husayn2910/DevOps-LabMid">View project repository</a></p>
+</main><script>
+document.getElementById('demo').addEventListener('submit',function(e){e.preventDefault();document.getElementById('status').style.display='block';});
+</script></body></html>
